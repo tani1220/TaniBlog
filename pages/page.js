@@ -1,35 +1,38 @@
 import Link from "next/link";
-
 import { NextSeo } from "next-seo";
 import { MainLayout } from "../layouts/main";
-import { ShortLetters } from "../components/ShortLetters";
-import { Timeline } from "../components/Timeline";
-
+import { BlogPages } from "../components/BlogPages";
 import utilStyles from "../styles/utils.module.css";
+import React from "react";
 
 export default function Home({ blog }) {
   return (
     <MainLayout>
       <NextSeo
-        title="My portfolio - Tani"
+        title="BlogPages - Tani"
         openGraph={{
           url: "#",
-          title: "My portfolio - Tani",
+          title: "BlogPages - Tani",
         }}
       />
-      このポートフォリオは作成中です。
-      <ShortLetters />
       <h2>BlogPages</h2>
-      {blog.map((blog) => (
-        <ul key={blog.id}>
-          <li>
-            <Link href={`blog/${blog.id}`}>
-              <a className={utilStyles.a}>{blog.title}</a>
-            </Link>
-          </li>
-        </ul>
-      ))}
-      <Timeline />
+      <div className={utilStyles.div}>
+        {blog.map((blog) => (
+          <div key={blog.id}>
+            <li>
+              <Link href={`blog/${blog.id}`}>
+                <a className={utilStyles.a}>
+                  <BlogPages
+                    subTitle={blog.subTitle}
+                    Image={blog.film.url}
+                    title={blog.title}
+                  />
+                </a>
+              </Link>
+            </li>
+          </div>
+        ))}
+      </div>
     </MainLayout>
   );
 }

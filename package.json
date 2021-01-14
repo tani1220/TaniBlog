@@ -8,7 +8,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "gray-matter": "^4.0.2",
     "next": "^10.0.0",
+    "next-seo": "^4.17.0",
+    "next-themes": "0.0.10",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   }

@@ -1,0 +1,21 @@
+.svgicon {
+  width: clamp(1.6em, 4vw, 2em);
+  height: 2em;
+  margin-right: 14px;
+  margin-right: clamp(3px, 1.5vw, 1rem);
+}
+.svgicon path,
+.svgicon polygon,
+.svgicon rect {
+  fill: var(--color-text-sm);
+}
+
+.container {
+  padding-top: 2rem;
+  display: flex;
+}
+
+.icons {
+  margin-left: auto;
+  margin-right: auto;
+}

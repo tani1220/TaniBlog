@@ -1,0 +1,68 @@
+.svgicon {
+  width: clamp(1.6em, 4vw, 2em);
+  height: 2em;
+}
+.svgicon path,
+.svgicon polygon,
+.svgicon rect {
+  fill: var(--color-icon);
+}
+
+.div {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: clamp(0.8rem, 3vw, 1.1rem);
+  margin: 0;
+}
+
+.child {
+  color: var(--color-text-sm);
+  font-size: clamp(0.8rem, 3vw, 1rem);
+}
+
+.year {
+  font-weight: 400;
+  font-size: clamp(0.8rem, 3vw, 1.5rem);
+  margin: clamp(0.5rem, 2vw, 1rem) 0;
+}
+
+.line {
+  border-bottom: 1px solid;
+  border-color: var(--color-icon2);
+  margin: clamp(1.5rem, 3vw, 2.5rem) 0;
+}
+
+.readAll {
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--color-text);
+}
+
+.svgicon {
+  margin-left: 4px;
+  width: 1.3em;
+  height: 1.3em;
+}
+
+.svgicon path,
+.svgicon polygon,
+.svgicon rect {
+  fill: #4691f6;
+}
+
+.main {
+  border: 1px solid;
+  padding: 1rem;
+  border-image: var(--color-text-sm);
+  border-image-slice: 1;
+  margin-top: 4rem;
+}
+
+.main h2 {
+  margin: 0;
+}
