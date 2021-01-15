@@ -9,6 +9,7 @@ const ThemeChanger = () => {
   useEffect(() => setMounted(true), []);
   return (
     <button
+      className={styles.button}
       aria-label="Toggle Dark Mode"
       type="button"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
@@ -16,7 +17,7 @@ const ThemeChanger = () => {
       {mounted && (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 -4 24 24"
+          viewBox="-2 -3 24 24"
           className={styles.svgicon}
         >
           {theme === "dark" ? (

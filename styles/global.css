@@ -1,23 +1,23 @@
 :root {
   --color-text: #000;
-  --color-text2: rgba(43, 133, 171);
+  --color-bg2: #ffffff;
   --color-text-sm: #374151;
   --color-bg: #fff;
   --color-code-bg: #fafafa;
   --color-border: #eaeaea;
-  --color-link: #0070f3;
+  --color-button: #f5f4f4;
   --color-icon: #0070f3;
   --color-icon2: #374151;
 }
 
 :root[data-theme="dark"] {
   --color-text: #fff;
-  --color-text2: #fc00ff;
+  --color-bg2: #000000;
   --color-text-sm: #9ca3af;
   --color-bg: #2d2d2d;
   --color-code-bg: #2d2d2d;
   --color-border: #dfdfdf;
-  --color-link: #221302;
+  --color-button: #353535;
   --color-icon: rgba(43, 133, 171);
   --color-icon2: #00dbde;
 }
@@ -55,7 +55,7 @@ li {
 }
 
 h2 {
-  font-size: clamp(1rem, 5vw, 2rem);
+  font-size: clamp(1.5rem, 5vw, 2rem);
 }
 
 h1,
