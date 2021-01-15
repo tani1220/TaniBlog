@@ -5,10 +5,9 @@
   --color-bg: #fff;
   --color-code-bg: #fafafa;
   --color-border: #eaeaea;
-  --color-border2: linear-gradient(to right, #fc00ff 0%, #00dbde 100%);
   --color-link: #0070f3;
   --color-icon: #0070f3;
-  --color-icon2: #fc00ff;
+  --color-icon2: #374151;
 }
 
 :root[data-theme="dark"] {
@@ -18,7 +17,6 @@
   --color-bg: #2d2d2d;
   --color-code-bg: #2d2d2d;
   --color-border: #dfdfdf;
-  --color-border2: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
   --color-link: #221302;
   --color-icon: rgba(43, 133, 171);
   --color-icon2: #00dbde;

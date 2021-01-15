@@ -1,12 +1,11 @@
 .container {
-  border-image: var(--color-border2);
-  border-image-slice: 1;
+  border-bottom: 2px solid;
+  border-color: var(--color-icon);
   background-color: var(--color-bg);
   padding: 2vw 7.5vw;
   position: sticky;
   z-index: 10;
   top: 0;
-  border-bottom: 2px solid;
 }
 
 .nav {
@@ -29,8 +28,8 @@
 .nav a:hover,
 .nav a:focus,
 .nav a:active {
-  color: var(--color-text2);
-  border-color: var(--color-text2);
+  color: var(--color-icon);
+  border-color: var(--color-icon);
 }
 .svgicon {
   width: clamp(2em, 5vw, 3.5em);
@@ -40,7 +39,7 @@
 .svgicon path,
 .svgicon polygon,
 .svgicon rect {
-  fill: var(--color-icon2);
+  fill: var(--color-icon);
 }
 
 /* .container2 padding: min(4vw, 76px) min(13vw, 134px) 0; */
