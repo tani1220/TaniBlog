@@ -1,5 +1,4 @@
 .container {
-  border-bottom: 2px solid;
   border-image: var(--color-border2);
   border-image-slice: 1;
   background-color: var(--color-bg);
@@ -7,6 +6,7 @@
   position: sticky;
   z-index: 10;
   top: 0;
+  border-bottom: 2px solid;
 }
 
 .nav {
