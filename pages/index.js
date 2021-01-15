@@ -1,11 +1,7 @@
-import Link from "next/link";
-
 import { NextSeo } from "next-seo";
 import { MainLayout } from "../layouts/main";
 import { ShortLetters } from "../components/ShortLetters";
 import { Timeline } from "../components/Timeline";
-
-import utilStyles from "../styles/utils.module.css";
 
 export default function Home({ blog }) {
   return (
@@ -19,16 +15,6 @@ export default function Home({ blog }) {
       />
       このポートフォリオは作成中です。
       <ShortLetters />
-      <h2>BlogPages</h2>
-      {blog.map((blog) => (
-        <ul key={blog.id}>
-          <li>
-            <Link href={`blog/${blog.id}`}>
-              <a className={utilStyles.a}>{blog.title}</a>
-            </Link>
-          </li>
-        </ul>
-      ))}
       <Timeline />
     </MainLayout>
   );
@@ -48,3 +34,16 @@ export const getStaticProps = async () => {
     },
   };
 };
+
+/*  
+<h2>BlogPages</h2>
+      {blog.map((blog) => (
+        <ul key={blog.id}>
+          <li>
+            <Link href={`blog/${blog.id}`}>
+              <a className={utilStyles.a}>{blog.title}</a>
+            </Link>
+          </li>
+        </ul>
+      ))} 
+ */
