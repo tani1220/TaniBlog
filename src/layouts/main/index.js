@@ -6,7 +6,9 @@ export function MainLayout({ children }) {
   return (
     <>
       <Header />
-      <main className={styles.content}>{children}</main>
+
+
+      <main className={styles.content}>{children}</main  >
       <Footer />
     </>
   );

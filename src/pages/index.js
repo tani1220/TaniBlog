@@ -35,7 +35,7 @@ export const getStaticProps = async () => {
   };
 };
 
-/*  
+/*
 <h2>BlogPages</h2>
       {blog.map((blog) => (
         <ul key={blog.id}>
@@ -45,5 +45,5 @@ export const getStaticProps = async () => {
             </Link>
           </li>
         </ul>
-      ))} 
+      ))}
  */
