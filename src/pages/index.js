@@ -3,15 +3,12 @@ import { MainLayout } from "../layouts/main";
 import { ShortLetters } from "../components/ShortLetters";
 import { Timeline } from "../components/Timeline";
 
-export default function Home({ blog }) {
+export default function Home() {
   return (
     <MainLayout>
       <NextSeo
-        title="My portfolio - Tani"
-        openGraph={{
-          url: "#",
-          title: "My portfolio - Tani",
-        }}
+        title="TaniBlog - Home"
+        description="TaniBlogのホーム画面です。"
       />
       このポートフォリオは作成中です。
       <ShortLetters />
@@ -19,31 +16,3 @@ export default function Home({ blog }) {
     </MainLayout>
   );
 }
-
-// データをテンプレートに受け渡す部分の処理を記述します
-export const getStaticProps = async () => {
-  const key = {
-    headers: { "X-API-KEY": process.env.API_KEY },
-  };
-  const data = await fetch("https://traveler.microcms.io/api/v1/blog", key)
-    .then((res) => res.json())
-    .catch(() => null);
-  return {
-    props: {
-      blog: data.contents,
-    },
-  };
-};
-
-/*
-<h2>BlogPages</h2>
-      {blog.map((blog) => (
-        <ul key={blog.id}>
-          <li>
-            <Link href={`blog/${blog.id}`}>
-              <a className={utilStyles.a}>{blog.title}</a>
-            </Link>
-          </li>
-        </ul>
-      ))}
- */

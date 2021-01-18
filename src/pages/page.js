@@ -8,13 +8,7 @@ import React from "react";
 export default function Home({ blog }) {
   return (
     <MainLayout>
-      <NextSeo
-        title="BlogPages - Tani"
-        openGraph={{
-          url: "#",
-          title: "BlogPages - Tani",
-        }}
-      />
+      <NextSeo title="TaniBlog - BlogPages" description="記事一覧" />
       <h2>BlogPages</h2>
       <div className={utilStyles.div}>
         {blog.map((blog) => (
@@ -23,8 +17,8 @@ export default function Home({ blog }) {
               <Link href={`blog/${blog.id}`}>
                 <a className={utilStyles.a}>
                   <BlogPages
-                    subTitle={blog.subTitle}
-                    Image={blog.film.url}
+                    subTitle={blog.meta.description}
+                    Image={blog.meta.image.url}
                     title={blog.title}
                     url={`https://tani-blog-git-main.tani1220.vercel.app/blog/${blog.id}`}
                   />
