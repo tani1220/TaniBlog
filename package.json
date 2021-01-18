@@ -15,7 +15,8 @@
     "next-seo": "^4.17.0",
     "next-themes": "0.0.10",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-share": "^4.3.1"
   },
   "devDependencies": {
     "prettier": "^2.2.1"

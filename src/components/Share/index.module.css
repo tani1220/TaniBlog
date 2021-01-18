@@ -1,0 +1,14 @@
+.share {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.share li {
+  margin-right: clamp(10px, 3vw, 1rem);
+}
+
+.text {
+  font-size: 0.9rem;
+  text-align: center;
+}

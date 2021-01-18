@@ -1,0 +1,42 @@
+import React from "react";
+import styles from "./index.module.css";
+import {
+  FacebookIcon,
+  FacebookShareButton,
+  TwitterIcon,
+  TwitterShareButton,
+  HatenaIcon,
+  HatenaShareButton,
+  LineIcon,
+  LineShareButton,
+} from "react-share";
+
+export const Share = ({ text, url }) => {
+  return (
+    <>
+      <p className={styles.text}>＼ (´Ｏ｀) ／ シェアしてね ~</p>
+      <ul className={styles.share}>
+        <li className="mr-8">
+          <TwitterShareButton url={url} title={text}>
+            <TwitterIcon size={32} round={true} />
+          </TwitterShareButton>
+        </li>
+        <li>
+          <FacebookShareButton url={url}>
+            <FacebookIcon size={32} round={true} />
+          </FacebookShareButton>
+        </li>
+        <li>
+          <HatenaShareButton url={url}>
+            <HatenaIcon size={32} round={true} />
+          </HatenaShareButton>
+        </li>
+        <li>
+          <LineShareButton url={url}>
+            <LineIcon size={32} round={true} />
+          </LineShareButton>
+        </li>
+      </ul>
+    </>
+  );
+};
