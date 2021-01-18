@@ -1,11 +1,12 @@
 import { MainLayout } from "../../layouts/main";
 import utilStyles from "../../styles/utils.module.css";
 import { Share } from "../../components/Share";
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 
 export default function BlogId({ blog }) {
   return (
     <MainLayout>
+      <NextSeo title={blog.title} description={blog.meta.description} />
       <main className={utilStyles.foo}>
         <h1>{blog.title}</h1>
         <p>{blog.publishedAt}</p>
@@ -17,7 +18,7 @@ export default function BlogId({ blog }) {
       </main>
       <Share
         url={`https://tani-blog-git-main.tani1220.vercel.app/blog/${blog.id}`}
-        title={blog.title}
+        text={blog.title}
       />
     </MainLayout>
   );

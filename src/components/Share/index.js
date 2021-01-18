@@ -22,17 +22,17 @@ export const Share = ({ text, url }) => {
           </TwitterShareButton>
         </li>
         <li>
-          <FacebookShareButton url={url}>
+          <FacebookShareButton url={url} title={text}>
             <FacebookIcon size={32} round={true} />
           </FacebookShareButton>
         </li>
         <li>
-          <HatenaShareButton url={url}>
+          <HatenaShareButton url={url} title={text}>
             <HatenaIcon size={32} round={true} />
           </HatenaShareButton>
         </li>
         <li>
-          <LineShareButton url={url}>
+          <LineShareButton url={url} title={text}>
             <LineIcon size={32} round={true} />
           </LineShareButton>
         </li>
