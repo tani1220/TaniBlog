@@ -5,7 +5,9 @@ export function ShortLetters() {
     <section className={styles.container}>
       <h1>Hello, I'm Tani</h1>
       <p>
-        エンジニアを目指して独学でプログラミングの勉強をしています。現在、Next.jsを使ったJAMStackのブログを作成していて、近いうちにWeb開発の企業に就職したいと考えています。
+        初めまして！こちらは、作成中のポートフォリオ ×
+        技術ブログです。私はフロントエンジニアを目指して独学で勉強しており、現在はJAMStackにフォーカスを当て
+        Next.js,React を学んでいます。
       </p>
     </section>
   );

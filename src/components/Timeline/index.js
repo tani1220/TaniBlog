@@ -5,12 +5,14 @@ const Set = ({ title, year, children }) => {
   return (
     <>
       <h3 className={styles.year}>{year}</h3>
-      <li>
-        <div className={styles.div}>
-          <p className={styles.title}>{title}</p>
-        </div>
-        <p className={styles.child}>{children}</p>
-      </li>
+      <ul>
+        <li>
+          <div className={styles.div}>
+            <p className={styles.title}>{title}</p>
+          </div>
+          <p className={styles.child}>{children}</p>
+        </li>
+      </ul>
     </>
   );
 };
@@ -23,7 +25,7 @@ const FullTimeline = () => (
   <>
     <Line />
     <Set year="2018" title="東オーストラリア制覇  ⛳">
-      東オーストラリアにある全ての主要都市に滞在、観光しました。
+      東オーストラリアの主要都市に滞在、観光しました。
     </Set>
     <Set title="アルバイト  🍓">
       Brisbane,Gold Coast周辺にある農場や工場で複数アルバイトを経験。
@@ -58,7 +60,7 @@ const FullTimeline = () => (
     <Set title="失恋  💔">失恋を経験しました。</Set>
     <Line />
     <Set year="2007" title="デュエルマスターになりました  👦🏼">
-      お婆ちゃんにおねだりして手に入れた野口英世を片手に、文房具屋のカードパックをサーチする日々。お婆ちゃん、ごめんよ…
+      おねだりして手に入れた野口英世を片手に、文房具屋のカードパックをサーチする日々。お婆ちゃん、ごめんよ…
     </Set>
     <Line />
     <Set year="1997" title="生まれる  👶🏻">
@@ -84,7 +86,7 @@ export function Timeline() {
         伯父が経営している建築屋で人手が足りないときにアルバイトしています。
       </Set>
       <Set title="ブログ作成  🧑🏻‍💻">
-        wordpressでブログを作成。留学する方をターゲットにしていて、私がオーストラリアに滞在した経験や情報を発信していました。数十記事と多くないので記事をこちらに移行予定。
+        wordpressでブログを作成。留学する方をターゲットにしていて、私がオーストラリアに滞在した経験や情報を発信していました。
       </Set>
       <Set title="帰国  🇯🇵">
         オーストラリア緊急事態宣言によって働いていた会社が経営困難となって解雇される。日本政府からの帰国要請も出ており5月に帰国を決意。
@@ -94,7 +96,7 @@ export function Timeline() {
         食肉加工場でアルバイトから正社員になりました。
       </Set>
       <Set title="Trip in Melbourn  🚃">
-        約260㎞に渡って続く海岸道路を車で旅行。
+        約260㎞に渡って続く海岸道路（Great Ocean Road）を車で旅行。
       </Set>
       <Set title="アルバイト  🍎">
         NSW州にある農場でアルバイト。ピーナッツの木植えや果樹の手入れを経験しました。
@@ -102,17 +104,17 @@ export function Timeline() {
       {isShowingFullTimeline ? (
         <FullTimeline />
       ) : (
-          <button
-            type="button"
-            className={styles.readAll}
-            onClick={() => isShowFullTimeline(true)}
-          >
-            すべて見る
-            <svg className={styles.svgicon} viewBox="0 0 20 20">
-              <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10" />
-            </svg>
-          </button>
-        )}
+        <button
+          type="button"
+          className={styles.readAll}
+          onClick={() => isShowFullTimeline(true)}
+        >
+          すべて見る
+          <svg className={styles.svgicon} viewBox="0 0 20 20">
+            <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10" />
+          </svg>
+        </button>
+      )}
       {isShowingFullTimeline ? (
         <button
           type="button"
@@ -125,8 +127,8 @@ export function Timeline() {
           </svg>
         </button>
       ) : (
-          <button></button>
-        )}
+        <button></button>
+      )}
     </main>
   );
 }

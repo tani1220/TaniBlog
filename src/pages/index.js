@@ -7,10 +7,9 @@ export default function Home() {
   return (
     <MainLayout>
       <NextSeo
-        title="TaniBlog - Home"
-        description="TaniBlogのホーム画面です。"
+        title="TaniBlog - About"
+        description="TaniBlogの自己紹介ページです。"
       />
-      このポートフォリオは作成中です。
       <ShortLetters />
       <Timeline />
     </MainLayout>

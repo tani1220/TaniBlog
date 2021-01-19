@@ -38,13 +38,10 @@ export function Header() {
         <ThemeChanger />
         <div>
           <Link href={"/"}>
-            <a>Home</a>
+            <a>About</a>
           </Link>
           <Link href={"/page"}>
             <a>Blog</a>
-          </Link>
-          <Link href={"/about"}>
-            <a>About</a>
           </Link>
         </div>
       </nav>
@@ -52,7 +49,7 @@ export function Header() {
   );
 }
 
-/* memo
+/*mo
 ・ボタンを使ったダークモード切替コード
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
