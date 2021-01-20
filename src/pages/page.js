@@ -14,7 +14,7 @@ export default function Home({ blog }) {
         {blog.map((blog) => (
           <div key={blog.id}>
             <li>
-              <Link href={`blog/${blog.id}`}>
+              <Link href={`/blog/${blog.id}`}>
                 <a className={utilStyles.a}>
                   <BlogPages
                     subTitle={blog.meta.description}
