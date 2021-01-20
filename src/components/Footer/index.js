@@ -1,7 +1,7 @@
 import styles from "./index.module.css";
 
-const IconLink = ({ href, children }) => (
-  <a className={styles.a} href={href}>
+const IconLink = ({ href, children, name }) => (
+  <a className={styles.a} href={href} aria-label={name}>
     {children}
   </a>
 );

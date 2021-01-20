@@ -20,7 +20,6 @@ export default function Home({ blog }) {
                     subTitle={blog.meta.description}
                     Image={blog.meta.image.url}
                     title={blog.title}
-                    url={`https://tani-blog-git-main.tani1220.vercel.app/blog/${blog.id}`}
                   />
                 </a>
               </Link>
