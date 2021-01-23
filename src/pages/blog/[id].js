@@ -7,13 +7,14 @@ export default function BlogId({ blog }) {
   return (
     <MainLayout>
       <NextSeo title={blog.title} description={blog.meta.description} />
-      <main className={utilStyles.foo}>
+      <main>
         <h1>{blog.title}</h1>
         <p>{blog.publishedAt}</p>
         <div
           dangerouslySetInnerHTML={{
             __html: `${blog.body}`,
           }}
+          className={utilStyles.foo}
         />
       </main>
       <Share
