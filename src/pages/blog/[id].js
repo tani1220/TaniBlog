@@ -2,6 +2,7 @@ import { MainLayout } from "../../layouts/main";
 import utilStyles from "../../styles/utils.module.css";
 import { Share } from "../../components/Share";
 import { NextSeo } from "next-seo";
+import { format } from "date-fns";
 
 export default function BlogId({ blog }) {
   return (
@@ -9,7 +10,7 @@ export default function BlogId({ blog }) {
       <NextSeo title={blog.title} description={blog.meta.description} />
       <main>
         <h1>{blog.title}</h1>
-        <p>{blog.publishedAt}</p>
+        <p>{format(new Date(blog.publishedAt), "yyyy-MM-dd")}</p>
         <div
           dangerouslySetInnerHTML={{
             __html: `${blog.body}`,
