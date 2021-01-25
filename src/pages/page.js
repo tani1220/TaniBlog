@@ -5,12 +5,12 @@ import { BlogPages } from "../components/BlogPages";
 import utilStyles from "../styles/utils.module.css";
 import React from "react";
 
-export default function Home({ blog }) {
+export default function Page({ blog }) {
   return (
     <MainLayout>
       <NextSeo title="TaniBlog - BlogPages" description="記事一覧" />
       <h2>BlogPages</h2>
-      <div className={utilStyles.div}>
+      <ul className={utilStyles.card}>
         {blog.map((blog) => (
           <div key={blog.id}>
             <li>
@@ -26,7 +26,7 @@ export default function Home({ blog }) {
             </li>
           </div>
         ))}
-      </div>
+      </ul>
     </MainLayout>
   );
 }
