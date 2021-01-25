@@ -4,7 +4,9 @@ import { useState } from "react";
 const Set = ({ title, year, children }) => {
   return (
     <>
-      <h3 className={styles.year}>{year}</h3>
+      <h3 aria-label="year" className={styles.year}>
+        {year}
+      </h3>
       <ul>
         <li>
           <div className={styles.div}>
