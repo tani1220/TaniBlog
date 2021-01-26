@@ -1,7 +1,7 @@
 import { NextSeo } from "next-seo";
-import { MainLayout } from "../layouts/main";
-import { ShortLetters } from "../components/ShortLetters";
-import { Timeline } from "../components/Timeline";
+import { MainLayout } from "src/layouts/main";
+import { ShortLetters } from "src/components/ShortLetters";
+import { Timeline } from "src/components/Timeline";
 
 export default function Home() {
   return (

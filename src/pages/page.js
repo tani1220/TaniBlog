@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { NextSeo } from "next-seo";
-import { MainLayout } from "../layouts/main";
-import { BlogPages } from "../components/BlogPages";
-import utilStyles from "../styles/utils.module.css";
+import { MainLayout } from "src/layouts/main";
+import { BlogPages } from "src/components/BlogPages";
+import utilStyles from "src/styles/utils.module.css";
 import React from "react";
 
 export default function Page({ blog }) {

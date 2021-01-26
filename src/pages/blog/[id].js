@@ -1,6 +1,6 @@
-import { MainLayout } from "../../layouts/main";
-import utilStyles from "../../styles/utils.module.css";
-import { Share } from "../../components/Share";
+import { MainLayout } from "src/layouts/main";
+import utilStyles from "src/styles/utils.module.css";
+import { Share } from "src/components/Share";
 import { NextSeo } from "next-seo";
 import { format } from "date-fns";
 
