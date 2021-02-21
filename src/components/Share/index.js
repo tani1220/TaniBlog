@@ -14,7 +14,7 @@ import {
 export const Share = ({ text, url }) => {
   return (
     <>
-      <p className={styles.text}>＼ (´Ｏ｀) ／ シェアしてね ~</p>
+      <p className={styles.text}>シェアる？</p>
       <ul className={styles.share}>
         <li className="mr-8">
           <TwitterShareButton url={url} title={text}>

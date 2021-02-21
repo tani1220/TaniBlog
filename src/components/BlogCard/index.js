@@ -15,7 +15,7 @@ const useStyles = makeStyles({
   },
 });
 
-export function BlogPages({ title, Image, subTitle }) {
+export function BlogCard({ title, Image, subTitle }) {
   const classes = useStyles();
   return (
     <>

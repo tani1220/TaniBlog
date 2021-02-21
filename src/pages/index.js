@@ -1,17 +1,12 @@
-import { NextSeo } from "next-seo";
-import { MainLayout } from "src/layouts/main";
+import { Container } from "src/components/Container";
 import { ShortLetters } from "src/components/ShortLetters";
 import { Timeline } from "src/components/Timeline";
 
 export default function Home() {
   return (
-    <MainLayout>
-      <NextSeo
-        title="TaniBlog - About"
-        description="TaniBlogの自己紹介ページです。"
-      />
+    <Container>
       <ShortLetters />
       <Timeline />
-    </MainLayout>
+    </Container>
   );
 }
