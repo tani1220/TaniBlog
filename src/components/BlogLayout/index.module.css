@@ -4,10 +4,6 @@
   margin-right: auto;
 }
 
-.page img {
-  margin: auto;
-}
-
 .page a {
   color: var(--color-icon);
   text-decoration: none;

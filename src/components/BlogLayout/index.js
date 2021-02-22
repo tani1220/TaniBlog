@@ -1,7 +1,8 @@
 import { Container } from "src/components/Container";
 import { Share } from "src/components/Share";
-import styles from "./index.module.css";
+import Image from "next/image";
 import Head from "next/head";
+import styles from "./index.module.css";
 
 export function Layout({ children, meta }) {
   return (
@@ -15,7 +16,7 @@ export function Layout({ children, meta }) {
       <Container meta={meta}>
         <h1>{meta.title}</h1>
         <p>更新日：{meta.date}</p>
-
+        <Image src={meta.image} width={720} height={426} priority />
         <article
           className={styles.page}
           dangerouslySetInnerHTML={{ __html: children }}
