@@ -7,7 +7,8 @@ export function Container({ children, meta: pageMeta }) {
   const meta = {
     title: "TaniBlog",
     description: "test",
-    image: "https://leerob.io/static/images/banner.png",
+    image:
+      "https://tani.im/_next/image?url=%2Fstatic%2Fimages%2Fscreen.png&w=1920&q=75",
     ...pageMeta,
   };
 
