@@ -7,7 +7,7 @@ export function Container({ children, meta: pageMeta }) {
   const meta = {
     title: "TaniBlog",
     description: "test",
-    image:
+    cardImage:
       "https://tani.im/_next/image?url=%2Fstatic%2Fimages%2Fscreen.png&w=1920&q=75",
     ...pageMeta,
   };
@@ -18,16 +18,16 @@ export function Container({ children, meta: pageMeta }) {
         <title>{meta.title}</title>
         <meta content={meta.description} name="description" />
         <meta property="article:published_time" content={meta.date} />
-        <meta property="og:type" content={meta.type} />
+        <meta property="og:type" content="website" />
         <meta property="og:site_name" content="TaniBlog" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
-        <meta property="og:image" content={meta.image} />
+        <meta property="og:image" content={meta.cardImage} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@tani_im_" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
-        <meta name="twitter:image" content={meta.image} />
+        <meta name="twitter:image" content={meta.cardImage} />
       </Head>
       <Header />
       <main className={styles.content}>{children}</main>
