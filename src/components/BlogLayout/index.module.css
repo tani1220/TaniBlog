@@ -9,6 +9,15 @@
   text-decoration: none;
 }
 
+.page p {
+  font-family: serif;
+  font-size: clamp(16px, 4vw, 18px);
+}
+
+.page img {
+  margin: auto;
+}
+
 .a:hover,
 .a:focus,
 .a:active {
