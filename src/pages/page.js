@@ -8,7 +8,6 @@ import { getSortedPostsData } from "src/lib/docs";
 export default function Page({ allPostsData }) {
   return (
     <Container>
-      {/* <NextSeo title="TaniBlog - BlogPages" description="記事一覧" /> */}
       <h2>BlogPage</h2>
       <ul className={utilStyles.cards}>
         {allPostsData.map((allPostsData) => (

@@ -9,7 +9,7 @@ export function Container({ children, meta: pageMeta }) {
 
   const meta = {
     title: "TaniBlog",
-    description: "test",
+    description: "こちらは TaniBlog です。",
     cardImage:
       "https://tani.im/_next/image?url=%2Fstatic%2Fimages%2Fscreen.png&w=1920&q=75",
     ...pageMeta,

@@ -4,6 +4,10 @@
   margin-right: auto;
 }
 
+.date {
+  float: right;
+}
+
 .page a {
   color: var(--color-icon);
   text-decoration: none;

@@ -17,7 +17,7 @@ export function Layout({ children, meta }) {
         <h1>{meta.title}</h1>
         <div className={styles.date}>
           <div>公開日：{meta.date}</div>
-          <div>更新日：{meta.NewDate}</div>
+          <div>更新日：{meta.newDate}</div>
         </div>
         <Image src={meta.image} width={720} height={426} priority />
         <article

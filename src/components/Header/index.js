@@ -48,32 +48,3 @@ export function Header() {
     </header>
   );
 }
-
-/*mo
-・ボタンを使ったダークモード切替コード
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => setMounted(true), []);
-    <button
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-    >
-      {mounted && (
-        <svg>
-          {theme === 'dark' ? (
-            <path />
-          ) : (
-            <path />
-          )}
-        </svg>
-      )}
-    </button>
-  );
-・valueを使ったダークモード切替コード
-   {theme !== undefined && (
-          <select value={theme} onChange={(e) => setTheme(e.target.value)}>
-            <option value="dark">Dark</option>
-            <option value="light">Light</option>
-          </select>
-        )}
-*/
