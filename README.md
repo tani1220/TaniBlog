@@ -1,1 +1,1 @@
-This is a my portfolio built with Next.js, microCMS, and Vercel ✨
+This is a my portfolio built with Next.js, Markdown, and Vercel ✨
