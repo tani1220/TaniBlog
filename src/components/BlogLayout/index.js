@@ -15,7 +15,10 @@ export function Layout({ children, meta }) {
       </Head>
       <Container meta={meta}>
         <h1>{meta.title}</h1>
-        <p>更新日：{meta.date}</p>
+        <div className={styles.date}>
+          <div>公開日：{meta.date}</div>
+          <div>更新日：{meta.NewDate}</div>
+        </div>
         <Image src={meta.image} width={720} height={426} priority />
         <article
           className={styles.page}
