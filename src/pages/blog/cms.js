@@ -7,7 +7,11 @@ import React from "react";
 export default function Page({ blog }) {
   return (
     <Container>
-      <h2>BlogPage</h2>
+      <h1>MicroPage</h1>
+      <h2>Next.js × MicroCMS</h2>
+      <p>
+        現在、私の記事はMarkdownで構成されていますが、以前は日本製ヘッドレスCMSであるMicroCMSを使っていました。下記の記事はMicroCMSから投稿されています。
+      </p>
       <ul className={utilStyles.cards}>
         {blog.map((blog) => (
           <div key={blog.id}>
